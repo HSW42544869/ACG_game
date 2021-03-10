@@ -31,6 +31,8 @@ public class RoomGrnerator : MonoBehaviour
 
 
     List<GameObject> oneWayRooms = new List<GameObject>();      //以上兩個有哪一個是只有單獨路口的房間
+
+    public WallType wallType;
     void Start()
     {
         for (int i = 0; i < roomNumber; i++)
@@ -69,7 +71,7 @@ public class RoomGrnerator : MonoBehaviour
         }
     }
 
-    public void ChangPointPos()
+    public void ChangPointPos()     //判斷且加房間
     {
         do   //dowhile先執行一次再做後續的判斷與後面的動作
         {
@@ -106,6 +108,50 @@ public class RoomGrnerator : MonoBehaviour
         newRoom.roomRight = Physics2D.OverlapCircle(roomPosition + new Vector3(xoffset, 0, 0), 0.2f, roomLayer);
 
         newRoom.UpdateRoom();
+
+        switch (newRoom.doorNumber)
+        {
+            case 1:     //一個路徑的房間
+                if (newRoom.roomUp)
+                    Instantiate(wallType.singleUP, roomPosition, Quaternion.identity);
+                if (newRoom.roomDown)
+                    Instantiate(wallType.singleDown, roomPosition, Quaternion.identity);
+                if (newRoom.roomLeft)
+                    Instantiate(wallType.singleLeft, roomPosition, Quaternion.identity);
+                if (newRoom.roomRight)
+                    Instantiate(wallType.singleRight, roomPosition, Quaternion.identity);
+                break;
+            case 2:     //兩個路徑的房間
+                if (newRoom.roomLeft && newRoom.roomUp)
+                    Instantiate(wallType.doubleLU, roomPosition, Quaternion.identity);
+                if (newRoom.roomUp && newRoom.roomRight)
+                    Instantiate(wallType.doubleUR, roomPosition, Quaternion.identity);
+                if (newRoom.roomRight && newRoom.roomDown)
+                    Instantiate(wallType.doubleRD, roomPosition, Quaternion.identity);
+                if (newRoom.roomDown && newRoom.roomLeft)
+                    Instantiate(wallType.doubleDL, roomPosition, Quaternion.identity);
+                if (newRoom.roomDown && newRoom.roomLeft)
+                    Instantiate(wallType.doubleLR, roomPosition, Quaternion.identity);
+                if (newRoom.roomUp && newRoom.roomDown)
+                    Instantiate(wallType.doubleUD, roomPosition, Quaternion.identity);
+                break;
+            case 3:
+                if (newRoom.roomLeft && newRoom.roomUp && newRoom.roomRight)
+                    Instantiate(wallType.tripleLUR, roomPosition, Quaternion.identity);
+                if (newRoom.roomUp && newRoom.roomRight && newRoom.roomDown)
+                    Instantiate(wallType.tripleURD, roomPosition, Quaternion.identity);
+                if (newRoom.roomRight && newRoom.roomDown && newRoom.roomLeft)
+                    Instantiate(wallType.tripleRDL, roomPosition, Quaternion.identity);
+                if (newRoom.roomDown && newRoom.roomLeft && newRoom.roomUp)
+                    Instantiate(wallType.tripleDLU, roomPosition, Quaternion.identity);
+                break;
+                case 4:
+                if (newRoom.roomLeft && newRoom.roomUp && newRoom.roomRight && newRoom.roomDown)
+                    Instantiate(wallType.fourDoors, roomPosition, Quaternion.identity);
+                break;
+
+
+        }
     }
 
     public void FindEndRoom()       //找到最後的房間
@@ -117,24 +163,24 @@ public class RoomGrnerator : MonoBehaviour
             if (rooms[i].stepToStart > maxStep)
                 maxStep = rooms[i].stepToStart;//將最遠的數字房間抓出來
         }
-            foreach (var room in rooms)
-            {
-                if (room.stepToStart == maxStep)
-                    farRooms.Add(room.gameObject);      //獲得數值最大房間
-                if (room.stepToStart == maxStep - 1)
-                    lessFarRooms.Add(room.gameObject);       //獲得數值次大房間
-            }
+        foreach (var room in rooms)
+        {
+            if (room.stepToStart == maxStep)
+                farRooms.Add(room.gameObject);      //獲得數值最大房間
+            if (room.stepToStart == maxStep - 1)
+                lessFarRooms.Add(room.gameObject);       //獲得數值次大房間
+        }
 
-            for (int i = 0; i < farRooms.Count; i++)
-            {
-                if (farRooms[i].GetComponent<Room>().doorNumber == 1)           //最遠距離判斷哪一個開關門數量等於1
+        for (int i = 0; i < farRooms.Count; i++)
+        {
+            if (farRooms[i].GetComponent<Room>().doorNumber == 1)           //最遠距離判斷哪一個開關門數量等於1
                 oneWayRooms.Add(farRooms[i]);
-            }
-            for (int i = 0; i < lessFarRooms.Count; i++)
-            {
-                if (lessFarRooms[i].GetComponent<Room>().doorNumber == 1)       //次遠距離判斷哪一個開關門數量等於1
-                    oneWayRooms.Add(lessFarRooms[i]);
-            }
+        }
+        for (int i = 0; i < lessFarRooms.Count; i++)
+        {
+            if (lessFarRooms[i].GetComponent<Room>().doorNumber == 1)       //次遠距離判斷哪一個開關門數量等於1
+                oneWayRooms.Add(lessFarRooms[i]);
+        }
 
         if (oneWayRooms.Count != 0)     //有單個開向的房間
         {
@@ -142,11 +188,19 @@ public class RoomGrnerator : MonoBehaviour
         }
         else
         {
-                //無單個開向的房間
+            //無單個開向的房間
         }
         {
             endRoom = farRooms[Random.Range(0, farRooms.Count)];        //隨機最遠距離抓一個
         }
-        }
     }
+}
+[System.Serializable]       //使Unity識別
+public class WallType
+{
+    public GameObject singleLeft, singleRight, singleUP, singleDown,
+                      doubleLU, doubleUR, doubleRD, doubleDL,doubleLR,doubleUD,
+                      tripleLUR, tripleURD, tripleRDL, tripleDLU,
+                      fourDoors;
+}
 
