@@ -20,25 +20,41 @@ public class RoomGrnerator : MonoBehaviour
     public float xoffset;
     public float yoffset;
     public LayerMask roomLayer;
+    public int maxStep;
 
-    public List<GameObject> rooms = new List<GameObject>();     //創建房間列表
+    public List<Room> rooms = new List<Room>();     //創建房間列表
+
+    List<GameObject> farRooms = new List<GameObject>();     //最遠距離的房間
+
+
+    List<GameObject> lessFarRooms = new List<GameObject>();     //第二遠的房間
+
+
+    List<GameObject> oneWayRooms = new List<GameObject>();      //以上兩個有哪一個是只有單獨路口的房間
     void Start()
     {
         for (int i = 0; i < roomNumber; i++)
         {
-            rooms.Add(Instantiate(roomPrefab, generatorPoint.position, Quaternion.identity));
+            rooms.Add(Instantiate(roomPrefab, generatorPoint.position, Quaternion.identity).GetComponent<Room>());
 
             //改變point位置
             ChangPointPos();
         }
         rooms[0].GetComponent<SpriteRenderer>().color = starColor;      //第一個房間
+
+        endRoom = rooms[0].gameObject;
+
+        //找到最後房間
         foreach (var room in rooms)
         {
-            if (room.transform.position.sqrMagnitude > endRoom.transform.position.sqrMagnitude)     //距離初始房間最遠的房間作為最後的房間
-            {
-                endRoom = room;
-            }
+            //if (room.transform.position.sqrMagnitude > endRoom.transform.position.sqrMagnitude)     //距離初始房間最遠的房間作為最後的房間
+            //{
+            //    endRoom = room.gameObject;
+            //}
+            SetupRoom(room, room.transform.position);
         }
+        FindEndRoom();
+
         endRoom.GetComponent<SpriteRenderer>().color = endColor;
 
 
@@ -57,7 +73,7 @@ public class RoomGrnerator : MonoBehaviour
     {
         do   //dowhile先執行一次再做後續的判斷與後面的動作
         {
-            direction =(Direction)Random.Range(0, 4);       //獲得隨機的值(0~4不包含4),加Direction轉換成媒舉型
+            direction = (Direction)Random.Range(0, 4);       //獲得隨機的值(0~4不包含4),加Direction轉換成媒舉型
 
 
             switch (direction)//上下左右位置隨機生成
@@ -75,7 +91,62 @@ public class RoomGrnerator : MonoBehaviour
                     generatorPoint.position += new Vector3(xoffset, 0, 0);
                     break;
             }
-        } while (Physics2D.OverlapCircle(generatorPoint.position,0.2f,roomLayer));
-
+        } while (Physics2D.OverlapCircle(generatorPoint.position, 0.2f, roomLayer));
     }
-}
+    /// <summary>
+    /// 判斷上下左右
+    /// </summary>
+    /// <param name="newRoom"></param>
+    /// <param name="roomPosition"></param>
+    public void SetupRoom(Room newRoom, Vector3 roomPosition)
+    {
+        newRoom.roomUp = Physics2D.OverlapCircle(roomPosition + new Vector3(0, yoffset, 0), 0.2f, roomLayer);
+        newRoom.roomDown = Physics2D.OverlapCircle(roomPosition + new Vector3(0, -yoffset, 0), 0.2f, roomLayer);
+        newRoom.roomLeft = Physics2D.OverlapCircle(roomPosition + new Vector3(-xoffset, 0, 0), 0.2f, roomLayer);
+        newRoom.roomRight = Physics2D.OverlapCircle(roomPosition + new Vector3(xoffset, 0, 0), 0.2f, roomLayer);
+
+        newRoom.UpdateRoom();
+    }
+
+    public void FindEndRoom()       //找到最後的房間
+    {
+
+        for (int i = 0; i < rooms.Count; i++)       //先判斷所有的遠處房間號
+        {
+
+            if (rooms[i].stepToStart > maxStep)
+                maxStep = rooms[i].stepToStart;//將最遠的數字房間抓出來
+        }
+            foreach (var room in rooms)
+            {
+                if (room.stepToStart == maxStep)
+                    farRooms.Add(room.gameObject);      //獲得數值最大房間
+                if (room.stepToStart == maxStep - 1)
+                    lessFarRooms.Add(room.gameObject);       //獲得數值次大房間
+            }
+
+            for (int i = 0; i < farRooms.Count; i++)
+            {
+                if (farRooms[i].GetComponent<Room>().doorNumber == 1)           //最遠距離判斷哪一個開關門數量等於1
+                oneWayRooms.Add(farRooms[i]);
+            }
+            for (int i = 0; i < lessFarRooms.Count; i++)
+            {
+                if (lessFarRooms[i].GetComponent<Room>().doorNumber == 1)       //次遠距離判斷哪一個開關門數量等於1
+                    oneWayRooms.Add(lessFarRooms[i]);
+            }
+
+        if (oneWayRooms.Count != 0)     //有單個開向的房間
+        {
+            endRoom = oneWayRooms[Random.Range(0, oneWayRooms.Count)];
+        }
+        else
+        {
+                //無單個開向的房間
+        }
+        {
+            endRoom = farRooms[Random.Range(0, farRooms.Count)];        //隨機最遠距離抓一個
+        }
+        }
+    }
+
