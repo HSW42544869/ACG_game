@@ -130,12 +130,12 @@ public class RoomGrnerator : MonoBehaviour
                     Instantiate(wallType.doubleRD, roomPosition, Quaternion.identity);
                 if (newRoom.roomDown && newRoom.roomLeft)
                     Instantiate(wallType.doubleDL, roomPosition, Quaternion.identity);
-                if (newRoom.roomDown && newRoom.roomLeft)
+                if (newRoom.roomLeft && newRoom.roomRight)
                     Instantiate(wallType.doubleLR, roomPosition, Quaternion.identity);
                 if (newRoom.roomUp && newRoom.roomDown)
                     Instantiate(wallType.doubleUD, roomPosition, Quaternion.identity);
                 break;
-            case 3:
+            case 3:     //三個路徑的房間
                 if (newRoom.roomLeft && newRoom.roomUp && newRoom.roomRight)
                     Instantiate(wallType.tripleLUR, roomPosition, Quaternion.identity);
                 if (newRoom.roomUp && newRoom.roomRight && newRoom.roomDown)
@@ -145,7 +145,7 @@ public class RoomGrnerator : MonoBehaviour
                 if (newRoom.roomDown && newRoom.roomLeft && newRoom.roomUp)
                     Instantiate(wallType.tripleDLU, roomPosition, Quaternion.identity);
                 break;
-                case 4:
+                case 4:   //全開的房間
                 if (newRoom.roomLeft && newRoom.roomUp && newRoom.roomRight && newRoom.roomDown)
                     Instantiate(wallType.fourDoors, roomPosition, Quaternion.identity);
                 break;
