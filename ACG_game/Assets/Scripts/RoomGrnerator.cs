@@ -65,10 +65,10 @@ public class RoomGrnerator : MonoBehaviour
 
     void Update()
     {
-        if (Input.anyKeyDown)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);     //或的當前激活的場景,並從新進行加載
-        }
+       // if (Input.anyKeyDown)
+       // {
+       //   SceneManager.LoadScene(SceneManager.GetActiveScene().name);     //或的當前激活的場景,並從新進行加載
+       // }
     }
 
     public void ChangPointPos()     //判斷且加房間
@@ -107,7 +107,7 @@ public class RoomGrnerator : MonoBehaviour
         newRoom.roomLeft = Physics2D.OverlapCircle(roomPosition + new Vector3(-xoffset, 0, 0), 0.2f, roomLayer);
         newRoom.roomRight = Physics2D.OverlapCircle(roomPosition + new Vector3(xoffset, 0, 0), 0.2f, roomLayer);
 
-        newRoom.UpdateRoom();
+        newRoom.UpdateRoom(xoffset,yoffset);
 
         switch (newRoom.doorNumber)
         {
