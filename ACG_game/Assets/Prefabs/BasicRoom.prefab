@@ -68,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1394947467
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -5820360885964414978, guid: 4d5edcfb7f4cb994ba01077e4af70be6,
     type: 3}
@@ -150,7 +150,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1394947467
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -5820360885964414978, guid: 4d5edcfb7f4cb994ba01077e4af70be6,
     type: 3}
@@ -232,7 +232,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1394947467
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 2522850691796448525, guid: 4d5edcfb7f4cb994ba01077e4af70be6,
     type: 3}
@@ -314,7 +314,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1394947467
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 2522850691796448525, guid: 4d5edcfb7f4cb994ba01077e4af70be6,
     type: 3}
@@ -21981,7 +21981,7 @@ GameObject:
   - component: {fileID: 5984654396611519359}
   - component: {fileID: 1613761312903824608}
   - component: {fileID: 6298829707131814650}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BasicRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22140,7 +22140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5613884244838474722}
   - component: {fileID: 4553777224538017677}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
