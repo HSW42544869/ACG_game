@@ -44,9 +44,15 @@ TagManager:
   - name: Ground
     uniqueID: 1141169549
     locked: 0
+  - name: Ground2
+    uniqueID: 1764810227
+    locked: 0
   - name: Door
     uniqueID: 1394947467
     locked: 0
   - name: Player
     uniqueID: 4220108683
+    locked: 0
+  - name: Obstacle
+    uniqueID: 2822902957
     locked: 0
