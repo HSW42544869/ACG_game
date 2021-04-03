@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!50 &89883704 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 6863585656980438078, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 6863585657036545535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &158316517
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +141,7 @@ GameObject:
   - component: {fileID: 158316520}
   - component: {fileID: 158316519}
   - component: {fileID: 158316518}
+  - component: {fileID: 158316522}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -223,6 +230,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &158316522
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158316517}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9fed92de2f5bb4f4da0ca50d360b1e5e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &744267731
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +747,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6863585656980438073, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
+        type: 3}
+      propertyPath: rig
+      value: 
+      objectReference: {fileID: 89883704}
+    - target: {fileID: 6863585656980438073, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 6863585656980438076, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
+        type: 3}
     - target: {fileID: 6863585656980438074, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
         type: 3}
       propertyPath: m_RootOrder
@@ -776,6 +813,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6863585656980438076, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c51bca154a5607c4d9e07ec202fdf7f0, type: 2}
     - target: {fileID: 6863585656980438079, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
         type: 3}
       propertyPath: m_Name
