@@ -4,27 +4,34 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    public Rigidbody2D rig;
     public float speed;
-    Animation anim;
+    Animator anim;
+
+    Vector2 movent;
 
     public void Start()
     {
-        
+        rig = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        Movement();
-    }
-    void Movement()
-    {
-        float horizontalmove;
-        horizontalmove = Input.GetAxis("Horizontal");
-
-        if (horizontalmove !=  1)
+        movent.x = Input.GetAxisRaw("Horizontal");
+        movent.y = Input.GetAxisRaw("Vertical");
+        if (movent.x != 0)
         {
-            rb.velocity = new Vector2(horizontalmove * speed, rb.velocity.y);
+            transform.localScale = new Vector3(-movent.x, 1, 1);
         }
+        SwitchAnim();
+    }
+    private void FixedUpdate()
+    {
+        rig.MovePosition(rig.position + movent * speed * Time.fixedDeltaTime);
+    }
+    void SwitchAnim()
+    {
+        anim.SetFloat("walk", movent.magnitude);
     }
 }

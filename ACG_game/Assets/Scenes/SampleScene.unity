@@ -752,6 +752,11 @@ PrefabInstance:
       propertyPath: rb
       value: 
       objectReference: {fileID: 89883704}
+    - target: {fileID: 2875064877138861426, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
+        type: 3}
+      propertyPath: speed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6863585656980438073, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
         type: 3}
       propertyPath: rig
@@ -822,7 +827,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: c51bca154a5607c4d9e07ec202fdf7f0, type: 2}
+      objectReference: {fileID: 9100000, guid: 353fc4f603b75124688f0f907df081b3, type: 2}
     - target: {fileID: 6863585656980438079, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
         type: 3}
       propertyPath: m_Name
