@@ -755,8 +755,14 @@ PrefabInstance:
     - target: {fileID: 2875064877138861426, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
         type: 3}
       propertyPath: speed
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2875064877138861426, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
+        type: 3}
+      propertyPath: spells
+      value: 
+      objectReference: {fileID: 8360667018871773378, guid: 831000f6a7fffd44aa0f8e4ec4958e7e,
+        type: 3}
     - target: {fileID: 6863585656980438073, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
         type: 3}
       propertyPath: rig

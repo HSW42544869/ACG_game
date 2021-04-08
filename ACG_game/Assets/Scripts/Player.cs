@@ -7,6 +7,12 @@ public class Player : MonoBehaviour
     public Rigidbody2D rig;
     public float speed;
     Animator anim;
+    public GameObject spells;
+    public Transform point;
+    public int Speedspelles = 500;
+    public AudioClip soundFire;
+    public bool inPortal;
+    private AudioSource aud;
 
     Vector2 movent;
 
@@ -20,11 +26,30 @@ public class Player : MonoBehaviour
     {
         movent.x = Input.GetAxisRaw("Horizontal");
         movent.y = Input.GetAxisRaw("Vertical");
+        //射擊動作
+        if (Input.GetMouseButton(0))
+        {
+            anim.SetBool("attack", true);
+            Spell();
+        }
+        else
+        {
+            anim.SetBool("attack", false);
+        }
         if (movent.x != 0)
         {
             transform.localScale = new Vector3(-movent.x, 1, 1);
         }
         SwitchAnim();
+    }
+    private void Dead()
+    {
+        //如果 死亡開關 為是 就 跳出
+        if (anim.GetBool("dead")) return;
+        enabled = false;
+        anim.SetBool("dead", true);
+
+        //if (Gamemanager.live > 1) Invoke("Replay", 2.5f);
     }
     private void FixedUpdate()
     {
@@ -33,5 +58,32 @@ public class Player : MonoBehaviour
     void SwitchAnim()
     {
         anim.SetFloat("walk", movent.magnitude);
+    }
+    private void Spell()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+
+            //音源 的 播放一次音效(音效，隨機大小聲)
+            aud.PlayOneShot(soundFire, Random.Range(0.8f, 1.5f));
+            //生成 子彈在槍口
+            //生成(物件，座標，角度)
+            GameObject spellsIns = Instantiate(spells, point.transform.position, point.transform.rotation);
+
+
+            Vector3 mousePos = Input.mousePosition;
+            mousePos.z = Camera.main.nearClipPlane;
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
+
+            Vector3 directY = worldPosition - transform.position;
+            directY.x = 0;
+            directY.y = Mathf.Clamp(directY.y, -1f, 1f);
+
+
+
+            spellsIns.GetComponent<Rigidbody2D>().AddForce((transform.right + directY) * Speedspelles);
+            //spellsIns.GetComponent<Rigidbody2D>().AddForce(transform.right * Speedspelles);
+
+        }
     }
 }
