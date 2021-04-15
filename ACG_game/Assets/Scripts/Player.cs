@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Rigidbody2D rig;
     public float speed;
-    Animator anim;
     [Header("法術"),Tooltip("預製物")]
     public GameObject spells;
     [Header("法術生成點"),Tooltip("預製物")]
     public Transform point;
     public int Speedspelles = 500;
     public AudioClip soundFire;
+
+
     public bool inPortal;
+    private Rigidbody2D rig;
     private AudioSource aud;
+    private Animator anim;
     
 
     Vector2 movent;
 
-    public void Start()
+    public void Awake()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -75,7 +77,7 @@ public class Player : MonoBehaviour
             //生成(物件，座標，角度)
            GameObject temp = Instantiate(spells,point.position,point.rotation);
 
-            temp.GetComponent<Rigidbody2D>().AddForce(new Vector2(Speedspelles,0));
+            temp.GetComponent<Rigidbody2D>().AddForce(transform.right  * (-Speedspelles));
            
             //spellsIns.GetComponent<Rigidbody2D>().AddForce(transform.right * Speedspelles);
 

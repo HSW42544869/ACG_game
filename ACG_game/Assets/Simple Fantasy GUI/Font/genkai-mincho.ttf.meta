@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b084cf07a68114244bd4f3e92fee1dc7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Genkaimincho
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c728817a799dbfc419772a212df1be34, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
