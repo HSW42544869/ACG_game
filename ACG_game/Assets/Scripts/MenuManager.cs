@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    private void Awake()
+    {
+        GameManager.live = 3;
+    }
     // Start is called before the first frame update
     public void StartGame()
     {

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8360667018871773376}
   - component: {fileID: 8360667018871773377}
   - component: {fileID: 9153373405903824412}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: "\u6CD5\u8853\u78B0\u649E"
-  m_TagString: "\u6CD5\u8853"
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -660,7 +660,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 4
+    type: 10
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -4790,8 +4790,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1002951667
-  m_SortingLayer: 6
-  m_SortingOrder: 0
+  m_SortingLayer: 7
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6487413067958074616}
   - component: {fileID: 9153373405903824412}
   - component: {fileID: -6968560300989556231}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: "\u6CD5\u8853"
   m_TagString: "\u6CD5\u8853"
   m_Icon: {fileID: 0}
@@ -4792,8 +4792,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1002951667
-  m_SortingLayer: 6
+  m_SortingLayerID: -74858613
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -4871,6 +4871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionCount: 2
   magicDelay: 3
+  timer: 3
 --- !u!114 &-6968560300989556231
 MonoBehaviour:
   m_ObjectHideFlags: 0
