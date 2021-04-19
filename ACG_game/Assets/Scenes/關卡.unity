@@ -2114,13 +2114,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2809350536269912816, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2809350536269912816, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: Speedspelles
       value: 490
       objectReference: {fileID: 0}
@@ -2276,4 +2274,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7494714394520583364, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa, type: 3}
