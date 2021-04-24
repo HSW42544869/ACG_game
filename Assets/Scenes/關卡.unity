@@ -970,7 +970,7 @@ MonoBehaviour:
   direction: 0
   roomPrefab: {fileID: 7392407935724070423, guid: a36178542378cc143978968bd2a8d133,
     type: 3}
-  roomNumber: 10
+  roomNumber: 20
   starColor: {r: 0.08025527, g: 1, b: 0, a: 1}
   endColor: {r: 1, g: 0, b: 0, a: 1}
   endRoom: {fileID: 0}

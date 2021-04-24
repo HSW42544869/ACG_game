@@ -1,0 +1,319 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Void CameraController::Awake()
+extern void CameraController_Awake_mD3451D79F6E4EC030180A56728D0329E1D9F0809 (void);
+// 0x00000002 System.Void CameraController::Start()
+extern void CameraController_Start_mBDE87C2FCF352957C2B86B67610667663422FBE6 (void);
+// 0x00000003 System.Void CameraController::Update()
+extern void CameraController_Update_m3C257AC762117CFDDAD03C9C4FBBFDE51C61D534 (void);
+// 0x00000004 System.Void CameraController::ChangeTarget(UnityEngine.Transform)
+extern void CameraController_ChangeTarget_mC34F3939F11172E10A7531C9969EE69C32689E72 (void);
+// 0x00000005 System.Void CameraController::.ctor()
+extern void CameraController__ctor_m07EC5A8C82742876097619BE7DD9043F47327DAE (void);
+// 0x00000006 System.Void Enemy::Awake()
+extern void Enemy_Awake_mF268033197059561A4A0BC3E5F6B83B50D29C861 (void);
+// 0x00000007 System.Void Enemy::Update()
+extern void Enemy_Update_mA01EE7AF5D3B97687752E9D22BECB4A3E13F8FD2 (void);
+// 0x00000008 System.Void Enemy::Move()
+extern void Enemy_Move_mC861E510D8BD0AC6E1839F87C83349466763F3CA (void);
+// 0x00000009 System.Void Enemy::Spells()
+extern void Enemy_Spells_mBE3159997470152585B75B7BD5F6302EE50F5C7B (void);
+// 0x0000000A System.Void Enemy::Dead()
+extern void Enemy_Dead_m85D98BAC2A980D618272A5C392DB15A6DDF15A03 (void);
+// 0x0000000B System.Void Enemy::OnCollisionEnter2D(UnityEngine.Collision2D)
+extern void Enemy_OnCollisionEnter2D_m47EAF0D1D60EC5BF3953975EA6BF15189DF82A12 (void);
+// 0x0000000C System.Void Enemy::OnDrawGizmosSelected()
+extern void Enemy_OnDrawGizmosSelected_m7F375993E6203C6E996C40FFC54FE43F5B1E8B8B (void);
+// 0x0000000D System.Void Enemy::.ctor()
+extern void Enemy__ctor_m3C82F8269DE4132408E15B523907244771640734 (void);
+// 0x0000000E System.Void Explosion::OnCollisionEnter2D(UnityEngine.Collision2D)
+extern void Explosion_OnCollisionEnter2D_m8E503D60247A615E0FCB4D9DE4A4B2510D5A956B (void);
+// 0x0000000F System.Void Explosion::.ctor()
+extern void Explosion__ctor_m1400515C43124E852380BB8283E15042AF0A5094 (void);
+// 0x00000010 System.Void GameManager::Start()
+extern void GameManager_Start_m26461AEF27E44DB8FECCBC19D6C9E228B658BF8E (void);
+// 0x00000011 System.Void GameManager::Awake()
+extern void GameManager_Awake_m22F42B2A82708B10F652CAD8F2E0A4767110FF30 (void);
+// 0x00000012 System.Void GameManager::Update()
+extern void GameManager_Update_mC9303BA7C3117BD861F49F8E36151CC52117E6C1 (void);
+// 0x00000013 System.Void GameManager::BakeToMenu()
+extern void GameManager_BakeToMenu_m27EA694962118BAA7F77DC3CAF937646800BC61C (void);
+// 0x00000014 System.Void GameManager::QuitGame()
+extern void GameManager_QuitGame_mB499D5DDCD90223C6FBF396BF466D86BC6BFC230 (void);
+// 0x00000015 System.Void GameManager::AddScore(System.Int32)
+extern void GameManager_AddScore_mF7D9082C1C297FC0547D0DDE027410E708CEA226 (void);
+// 0x00000016 System.Void GameManager::PlayerDead()
+extern void GameManager_PlayerDead_m6B74B77858242A02119D0172D5AE9C72DA118312 (void);
+// 0x00000017 System.Void GameManager::SetLive()
+extern void GameManager_SetLive_m4E08CFAAB19AC3941A6474BA9C8B105AE950422F (void);
+// 0x00000018 System.Void GameManager::SetCollision()
+extern void GameManager_SetCollision_m52592436C6FF114D45C608A10E6D999A97641DC2 (void);
+// 0x00000019 System.Void GameManager::.ctor()
+extern void GameManager__ctor_mE8666F6D0CA9C31E16B719F79780DC4B0245B64D (void);
+// 0x0000001A System.Void GameManager::.cctor()
+extern void GameManager__cctor_m0872BB5B2E20B9183F004EB81D5129608114D285 (void);
+// 0x0000001B System.Void Magic::Awake()
+extern void Magic_Awake_m19B2FDF03655D285164253692CEB508EE81BA9C5 (void);
+// 0x0000001C System.Void Magic::Update()
+extern void Magic_Update_m9BEF6FAE333411588FACDFC8AC99B1C8057302A4 (void);
+// 0x0000001D System.Void Magic::OnCollisionEnter2D(UnityEngine.Collision2D)
+extern void Magic_OnCollisionEnter2D_m88298A34A8EB4A5D7FA83075E76BFF29466322EE (void);
+// 0x0000001E System.Void Magic::.ctor()
+extern void Magic__ctor_m886D6B87C69D82E60EB1B81D082A87F220F13697 (void);
+// 0x0000001F System.Void MenuManager::Awake()
+extern void MenuManager_Awake_mEFBAF3F8CBDEF5A033B3BAD9CA897801135B6463 (void);
+// 0x00000020 System.Void MenuManager::StartGame()
+extern void MenuManager_StartGame_mAAAE37B8FA23E525511FB82B78A599DE1407E84C (void);
+// 0x00000021 System.Void MenuManager::QuitGame()
+extern void MenuManager_QuitGame_m181685808151B2087C84F8B6F3C4D7D8E1F807D3 (void);
+// 0x00000022 System.Void MenuManager::.ctor()
+extern void MenuManager__ctor_m8F61CC885B72291B54C1C6EC368AE303EA856529 (void);
+// 0x00000023 System.Void Player::Awake()
+extern void Player_Awake_m1131F11CF6BF6FBE6454601C7D9A94AC8F468A24 (void);
+// 0x00000024 System.Void Player::Update()
+extern void Player_Update_mBA04F1D6FE3C18037EA95DFAEEAA9977BFD49CD3 (void);
+// 0x00000025 System.Void Player::Dead()
+extern void Player_Dead_m4EBC8803F31C3F1C6650B59DCEB3CEEBCE802B76 (void);
+// 0x00000026 System.Void Player::FixedUpdate()
+extern void Player_FixedUpdate_mD7447EDFC86F29A3E5FBDEF7E0139535BD4C5088 (void);
+// 0x00000027 System.Void Player::SwitchAnim()
+extern void Player_SwitchAnim_m363712EEE55BAD98E0014A3F72C024241C3FC24F (void);
+// 0x00000028 System.Void Player::Spell()
+extern void Player_Spell_m631108D74154EB27BAC9A74D303C70D3277313E9 (void);
+// 0x00000029 System.Void Player::.ctor()
+extern void Player__ctor_mDE8EB5B351975D4E7E24DE341B8B49B8A29CC2B7 (void);
+// 0x0000002A System.Void Room::Start()
+extern void Room_Start_mFF3BFC0D3DFD5E5AE5297C142A805B0C40317604 (void);
+// 0x0000002B System.Void Room::UpdateRoom(System.Single,System.Single)
+extern void Room_UpdateRoom_mC72394BEF18A15FEF308006B95A2787D5A150F41 (void);
+// 0x0000002C System.Void Room::OnTriggerEnter2D(UnityEngine.Collider2D)
+extern void Room_OnTriggerEnter2D_mF4A96BCD7F1DF9BBEAE2DB4CAC5CF7F7FD414CFF (void);
+// 0x0000002D System.Void Room::.ctor()
+extern void Room__ctor_m970729D9D91E49A7173A5AFD56CC3D9047A7BC8C (void);
+// 0x0000002E System.Void RoomGrnerator::Start()
+extern void RoomGrnerator_Start_mE95C7858F2A81F662B054998289DA700A30627EF (void);
+// 0x0000002F System.Void RoomGrnerator::Update()
+extern void RoomGrnerator_Update_mE92220C01A0D974D88E7D8B26C06F4231C46367A (void);
+// 0x00000030 System.Void RoomGrnerator::ChangPointPos()
+extern void RoomGrnerator_ChangPointPos_mED826D61090056748DAEDDFFEC005A250846D35A (void);
+// 0x00000031 System.Void RoomGrnerator::SetupRoom(Room,UnityEngine.Vector3)
+extern void RoomGrnerator_SetupRoom_m49CCCF7B6E4451579505EE245BDE2D8F99707D5F (void);
+// 0x00000032 System.Void RoomGrnerator::FindEndRoom()
+extern void RoomGrnerator_FindEndRoom_mCAA780F28757DF42675D02A3C902434F27695E54 (void);
+// 0x00000033 System.Void RoomGrnerator::.ctor()
+extern void RoomGrnerator__ctor_m53B39D42156187152A11DF02AEFB2C0BD1363676 (void);
+// 0x00000034 System.Void WallType::.ctor()
+extern void WallType__ctor_mDDD3C3D9E7DF08DE39FB1D1DB6B3BB83857BD31E (void);
+// 0x00000035 System.Void WallMap::OnEnable()
+extern void WallMap_OnEnable_m260B0C2AC1A4EB4F5D5BBCBD97F5EC5C76AF7538 (void);
+// 0x00000036 System.Void WallMap::OnTriggerEnter2D(UnityEngine.Collider2D)
+extern void WallMap_OnTriggerEnter2D_mC1EC4F8371D3A69C3E03E62702CB2C3BF305C961 (void);
+// 0x00000037 System.Void WallMap::.ctor()
+extern void WallMap__ctor_m7F8856F5A8983EAAA63E5C58757DAE8AC5242282 (void);
+// 0x00000038 System.Void article::Start()
+extern void article_Start_m497D8E5CD18AEFEE1190AC467F783A1620F681B8 (void);
+// 0x00000039 System.Void article::Update()
+extern void article_Update_mAC6CE115172E5F1B1136A6705FA7B47BF940D2DB (void);
+// 0x0000003A System.Void article::.ctor()
+extern void article__ctor_mBB6191849448A12140485575D67628AFCA1F5FE7 (void);
+// 0x0000003B System.Void player2::Awake()
+extern void player2_Awake_m3773EB00089FF750F97482D31F6E921E3E12ADEB (void);
+// 0x0000003C System.Void player2::Update()
+extern void player2_Update_m2558199EF82BFD6F0B37AB9A97D015E836CCB513 (void);
+// 0x0000003D System.Void player2::NextLevel()
+extern void player2_NextLevel_m035261E0A08E196A54B30B5B107166D21E4D3116 (void);
+// 0x0000003E System.Void player2::Move()
+extern void player2_Move_mF08EF779FCE492F896DB8E4D4A9460FCE39EB98B (void);
+// 0x0000003F System.Void player2::Spell()
+extern void player2_Spell_mF10A77BE61F354720D24E260BB6140E17572A693 (void);
+// 0x00000040 System.Void player2::Dead(System.String)
+extern void player2_Dead_m06652D252ABAFAC9477E88B6A09CF460DBEF985F (void);
+// 0x00000041 System.Void player2::Replay()
+extern void player2_Replay_m0516B4E7C7C247DE567D0C253BF47274AD044424 (void);
+// 0x00000042 System.Void player2::OnTriggerEnter2D(UnityEngine.Collider2D)
+extern void player2_OnTriggerEnter2D_m122908B530FAB151318FB539FFF33B6E6153406D (void);
+// 0x00000043 System.Void player2::OnTriggerExit2D(UnityEngine.Collider2D)
+extern void player2_OnTriggerExit2D_m175E261A25873B01BE724C9471C81051B23677C5 (void);
+// 0x00000044 System.Void player2::OnCollisionEnter2D(UnityEngine.Collision2D)
+extern void player2_OnCollisionEnter2D_m3ED0A6DAA3576E34695323AB3E09311FE85619BD (void);
+// 0x00000045 System.Void player2::.ctor()
+extern void player2__ctor_m8ADF2384147EC6CF5AB67CEE4F45EB439C03A7FD (void);
+static Il2CppMethodPointer s_methodPointers[69] = 
+{
+	CameraController_Awake_mD3451D79F6E4EC030180A56728D0329E1D9F0809,
+	CameraController_Start_mBDE87C2FCF352957C2B86B67610667663422FBE6,
+	CameraController_Update_m3C257AC762117CFDDAD03C9C4FBBFDE51C61D534,
+	CameraController_ChangeTarget_mC34F3939F11172E10A7531C9969EE69C32689E72,
+	CameraController__ctor_m07EC5A8C82742876097619BE7DD9043F47327DAE,
+	Enemy_Awake_mF268033197059561A4A0BC3E5F6B83B50D29C861,
+	Enemy_Update_mA01EE7AF5D3B97687752E9D22BECB4A3E13F8FD2,
+	Enemy_Move_mC861E510D8BD0AC6E1839F87C83349466763F3CA,
+	Enemy_Spells_mBE3159997470152585B75B7BD5F6302EE50F5C7B,
+	Enemy_Dead_m85D98BAC2A980D618272A5C392DB15A6DDF15A03,
+	Enemy_OnCollisionEnter2D_m47EAF0D1D60EC5BF3953975EA6BF15189DF82A12,
+	Enemy_OnDrawGizmosSelected_m7F375993E6203C6E996C40FFC54FE43F5B1E8B8B,
+	Enemy__ctor_m3C82F8269DE4132408E15B523907244771640734,
+	Explosion_OnCollisionEnter2D_m8E503D60247A615E0FCB4D9DE4A4B2510D5A956B,
+	Explosion__ctor_m1400515C43124E852380BB8283E15042AF0A5094,
+	GameManager_Start_m26461AEF27E44DB8FECCBC19D6C9E228B658BF8E,
+	GameManager_Awake_m22F42B2A82708B10F652CAD8F2E0A4767110FF30,
+	GameManager_Update_mC9303BA7C3117BD861F49F8E36151CC52117E6C1,
+	GameManager_BakeToMenu_m27EA694962118BAA7F77DC3CAF937646800BC61C,
+	GameManager_QuitGame_mB499D5DDCD90223C6FBF396BF466D86BC6BFC230,
+	GameManager_AddScore_mF7D9082C1C297FC0547D0DDE027410E708CEA226,
+	GameManager_PlayerDead_m6B74B77858242A02119D0172D5AE9C72DA118312,
+	GameManager_SetLive_m4E08CFAAB19AC3941A6474BA9C8B105AE950422F,
+	GameManager_SetCollision_m52592436C6FF114D45C608A10E6D999A97641DC2,
+	GameManager__ctor_mE8666F6D0CA9C31E16B719F79780DC4B0245B64D,
+	GameManager__cctor_m0872BB5B2E20B9183F004EB81D5129608114D285,
+	Magic_Awake_m19B2FDF03655D285164253692CEB508EE81BA9C5,
+	Magic_Update_m9BEF6FAE333411588FACDFC8AC99B1C8057302A4,
+	Magic_OnCollisionEnter2D_m88298A34A8EB4A5D7FA83075E76BFF29466322EE,
+	Magic__ctor_m886D6B87C69D82E60EB1B81D082A87F220F13697,
+	MenuManager_Awake_mEFBAF3F8CBDEF5A033B3BAD9CA897801135B6463,
+	MenuManager_StartGame_mAAAE37B8FA23E525511FB82B78A599DE1407E84C,
+	MenuManager_QuitGame_m181685808151B2087C84F8B6F3C4D7D8E1F807D3,
+	MenuManager__ctor_m8F61CC885B72291B54C1C6EC368AE303EA856529,
+	Player_Awake_m1131F11CF6BF6FBE6454601C7D9A94AC8F468A24,
+	Player_Update_mBA04F1D6FE3C18037EA95DFAEEAA9977BFD49CD3,
+	Player_Dead_m4EBC8803F31C3F1C6650B59DCEB3CEEBCE802B76,
+	Player_FixedUpdate_mD7447EDFC86F29A3E5FBDEF7E0139535BD4C5088,
+	Player_SwitchAnim_m363712EEE55BAD98E0014A3F72C024241C3FC24F,
+	Player_Spell_m631108D74154EB27BAC9A74D303C70D3277313E9,
+	Player__ctor_mDE8EB5B351975D4E7E24DE341B8B49B8A29CC2B7,
+	Room_Start_mFF3BFC0D3DFD5E5AE5297C142A805B0C40317604,
+	Room_UpdateRoom_mC72394BEF18A15FEF308006B95A2787D5A150F41,
+	Room_OnTriggerEnter2D_mF4A96BCD7F1DF9BBEAE2DB4CAC5CF7F7FD414CFF,
+	Room__ctor_m970729D9D91E49A7173A5AFD56CC3D9047A7BC8C,
+	RoomGrnerator_Start_mE95C7858F2A81F662B054998289DA700A30627EF,
+	RoomGrnerator_Update_mE92220C01A0D974D88E7D8B26C06F4231C46367A,
+	RoomGrnerator_ChangPointPos_mED826D61090056748DAEDDFFEC005A250846D35A,
+	RoomGrnerator_SetupRoom_m49CCCF7B6E4451579505EE245BDE2D8F99707D5F,
+	RoomGrnerator_FindEndRoom_mCAA780F28757DF42675D02A3C902434F27695E54,
+	RoomGrnerator__ctor_m53B39D42156187152A11DF02AEFB2C0BD1363676,
+	WallType__ctor_mDDD3C3D9E7DF08DE39FB1D1DB6B3BB83857BD31E,
+	WallMap_OnEnable_m260B0C2AC1A4EB4F5D5BBCBD97F5EC5C76AF7538,
+	WallMap_OnTriggerEnter2D_mC1EC4F8371D3A69C3E03E62702CB2C3BF305C961,
+	WallMap__ctor_m7F8856F5A8983EAAA63E5C58757DAE8AC5242282,
+	article_Start_m497D8E5CD18AEFEE1190AC467F783A1620F681B8,
+	article_Update_mAC6CE115172E5F1B1136A6705FA7B47BF940D2DB,
+	article__ctor_mBB6191849448A12140485575D67628AFCA1F5FE7,
+	player2_Awake_m3773EB00089FF750F97482D31F6E921E3E12ADEB,
+	player2_Update_m2558199EF82BFD6F0B37AB9A97D015E836CCB513,
+	player2_NextLevel_m035261E0A08E196A54B30B5B107166D21E4D3116,
+	player2_Move_mF08EF779FCE492F896DB8E4D4A9460FCE39EB98B,
+	player2_Spell_mF10A77BE61F354720D24E260BB6140E17572A693,
+	player2_Dead_m06652D252ABAFAC9477E88B6A09CF460DBEF985F,
+	player2_Replay_m0516B4E7C7C247DE567D0C253BF47274AD044424,
+	player2_OnTriggerEnter2D_m122908B530FAB151318FB539FFF33B6E6153406D,
+	player2_OnTriggerExit2D_m175E261A25873B01BE724C9471C81051B23677C5,
+	player2_OnCollisionEnter2D_m3ED0A6DAA3576E34695323AB3E09311FE85619BD,
+	player2__ctor_m8ADF2384147EC6CF5AB67CEE4F45EB439C03A7FD,
+};
+static const int32_t s_InvokerIndices[69] = 
+{
+	1129,
+	1129,
+	1129,
+	969,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	969,
+	1129,
+	1129,
+	969,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	959,
+	1129,
+	1129,
+	1129,
+	1129,
+	1910,
+	1129,
+	1129,
+	969,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	646,
+	969,
+	1129,
+	1129,
+	1129,
+	1129,
+	635,
+	1129,
+	1129,
+	1129,
+	1129,
+	969,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	1129,
+	969,
+	1129,
+	969,
+	969,
+	969,
+	1129,
+};
+extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	69,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	g_AssemblyU2DCSharp_AttributeGenerators,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

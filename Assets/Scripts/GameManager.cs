@@ -15,11 +15,18 @@ public class GameManager : MonoBehaviour
     [Header("結束畫面")]
     public GameObject final;
 
+    public static int enemyCount;
+
     // 一般欄位 重新載入場景 會還原為預設值
     // 靜態欄位 重新載入場景 不會還原為預設值
     public static int live = 3;
     public static int score;
+    private object tags;
 
+    public void Start()
+    {
+        //enemyCount = GameObject.FindGameObjectsWithTag(tags.Enemy.ToString()).Length;
+    }
     private void Awake()
     {
         SetCollision();
