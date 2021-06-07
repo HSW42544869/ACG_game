@@ -95,7 +95,7 @@ IL2CPP_EXTERN_C_END
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t76F5102420855B99D8AB78E8C4721C49E0DD7F30 
+struct U3CModuleU3E_t76F5102420855B99D8AB78E8C4721C49E0DD7F30 
 {
 public:
 
@@ -111,7 +111,7 @@ struct Il2CppArrayBounds;
 
 
 // UnityEngine.Tilemaps.ITilemap
-struct  ITilemap_t706EAD5C1A9032E29FF4454BDDED85C53C5E0013  : public RuntimeObject
+struct ITilemap_t706EAD5C1A9032E29FF4454BDDED85C53C5E0013  : public RuntimeObject
 {
 public:
 	// UnityEngine.Tilemaps.Tilemap UnityEngine.Tilemaps.ITilemap::m_Tilemap
@@ -147,7 +147,7 @@ public:
 
 
 // System.ValueType
-struct  ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52  : public RuntimeObject
+struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52  : public RuntimeObject
 {
 public:
 
@@ -164,7 +164,7 @@ struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52_marshaled_com
 };
 
 // System.Boolean
-struct  Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37 
+struct Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37 
 {
 public:
 	// System.Boolean System.Boolean::m_value
@@ -210,7 +210,7 @@ public:
 
 
 // UnityEngine.Color
-struct  Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659 
+struct Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659 
 {
 public:
 	// System.Single UnityEngine.Color::r
@@ -258,7 +258,7 @@ public:
 
 
 // System.Enum
-struct  Enum_t23B90B40F60E677A8025267341651C94AE079CDA  : public ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52
+struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA  : public ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52
 {
 public:
 
@@ -292,7 +292,7 @@ struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA_marshaled_com
 };
 
 // System.IntPtr
-struct  IntPtr_t 
+struct IntPtr_t 
 {
 public:
 	// System.Void* System.IntPtr::m_value
@@ -326,7 +326,7 @@ public:
 
 
 // UnityEngine.Matrix4x4
-struct  Matrix4x4_tDE7FF4F2E2EA284F6EFE00D627789D0E5B8B4461 
+struct Matrix4x4_tDE7FF4F2E2EA284F6EFE00D627789D0E5B8B4461 
 {
 public:
 	// System.Single UnityEngine.Matrix4x4::m00
@@ -520,7 +520,7 @@ public:
 
 
 // UnityEngine.Tilemaps.TileAnimationData
-struct  TileAnimationData_t149DEA00C16D767DB34BA1004B18C610D67F9D26 
+struct TileAnimationData_t149DEA00C16D767DB34BA1004B18C610D67F9D26 
 {
 public:
 	// UnityEngine.Sprite[] UnityEngine.Tilemaps.TileAnimationData::m_AnimatedSprites
@@ -573,7 +573,7 @@ struct TileAnimationData_t149DEA00C16D767DB34BA1004B18C610D67F9D26_marshaled_com
 };
 
 // UnityEngine.Vector3Int
-struct  Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA 
+struct Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA 
 {
 public:
 	// System.Int32 UnityEngine.Vector3Int::m_X
@@ -697,7 +697,7 @@ public:
 
 
 // System.Void
-struct  Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5 
+struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5 
 {
 public:
 	union
@@ -713,7 +713,7 @@ public:
 
 
 // System.Delegate
-struct  Delegate_t  : public RuntimeObject
+struct Delegate_t  : public RuntimeObject
 {
 public:
 	// System.IntPtr System.Delegate::method_ptr
@@ -865,7 +865,7 @@ struct Delegate_t_marshaled_com
 };
 
 // UnityEngine.Object
-struct  Object_tF2F3778131EFF286AF62B7B013A170F95A91571A  : public RuntimeObject
+struct Object_tF2F3778131EFF286AF62B7B013A170F95A91571A  : public RuntimeObject
 {
 public:
 	// System.IntPtr UnityEngine.Object::m_CachedPtr
@@ -909,7 +909,7 @@ struct Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_marshaled_com
 };
 
 // UnityEngine.Tilemaps.TileFlags
-struct  TileFlags_tAA2786C2FC3467D33A613BE2AE244E9E43EF510B 
+struct TileFlags_tAA2786C2FC3467D33A613BE2AE244E9E43EF510B 
 {
 public:
 	// System.Int32 UnityEngine.Tilemaps.TileFlags::value__
@@ -927,7 +927,7 @@ public:
 
 
 // UnityEngine.Tilemaps.Tile/ColliderType
-struct  ColliderType_tB8E55E3EB1D378726420E99E6F7646DC119923FB 
+struct ColliderType_tB8E55E3EB1D378726420E99E6F7646DC119923FB 
 {
 public:
 	// System.Int32 UnityEngine.Tilemaps.Tile/ColliderType::value__
@@ -945,7 +945,7 @@ public:
 
 
 // UnityEngine.Component
-struct  Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
+struct Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
 {
 public:
 
@@ -954,7 +954,7 @@ public:
 
 
 // UnityEngine.GameObject
-struct  GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
+struct GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
 {
 public:
 
@@ -963,7 +963,7 @@ public:
 
 
 // System.MulticastDelegate
-struct  MulticastDelegate_t  : public Delegate_t
+struct MulticastDelegate_t  : public Delegate_t
 {
 public:
 	// System.Delegate[] System.MulticastDelegate::delegates
@@ -992,7 +992,7 @@ struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 };
 
 // UnityEngine.ScriptableObject
-struct  ScriptableObject_t4361E08CEBF052C650D3666C7CEC37EB31DE116A  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
+struct ScriptableObject_t4361E08CEBF052C650D3666C7CEC37EB31DE116A  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
 {
 public:
 
@@ -1009,7 +1009,7 @@ struct ScriptableObject_t4361E08CEBF052C650D3666C7CEC37EB31DE116A_marshaled_com 
 };
 
 // UnityEngine.Sprite
-struct  Sprite_t5B10B1178EC2E6F53D33FFD77557F31C08A51ED9  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
+struct Sprite_t5B10B1178EC2E6F53D33FFD77557F31C08A51ED9  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
 {
 public:
 
@@ -1018,7 +1018,7 @@ public:
 
 
 // UnityEngine.U2D.SpriteAtlas
-struct  SpriteAtlas_t72834B063A58822D683F5557DF8D164740C8A5F9  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
+struct SpriteAtlas_t72834B063A58822D683F5557DF8D164740C8A5F9  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
 {
 public:
 
@@ -1027,7 +1027,7 @@ public:
 
 
 // UnityEngine.Tilemaps.TileData
-struct  TileData_tC1E1EE7E156EBC2D759086B44BC45C056BFEEAF6 
+struct TileData_tC1E1EE7E156EBC2D759086B44BC45C056BFEEAF6 
 {
 public:
 	// UnityEngine.Sprite UnityEngine.Tilemaps.TileData::m_Sprite
@@ -1117,7 +1117,7 @@ struct TileData_tC1E1EE7E156EBC2D759086B44BC45C056BFEEAF6_marshaled_com
 };
 
 // System.Action`1<UnityEngine.U2D.SpriteAtlas>
-struct  Action_1_tFA33A618CBBE03EC01FE6A4CD6489392526BA5FF  : public MulticastDelegate_t
+struct Action_1_tFA33A618CBBE03EC01FE6A4CD6489392526BA5FF  : public MulticastDelegate_t
 {
 public:
 
@@ -1126,7 +1126,7 @@ public:
 
 
 // UnityEngine.Behaviour
-struct  Behaviour_t1A3DDDCF73B4627928FBFE02ED52B7251777DBD9  : public Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684
+struct Behaviour_t1A3DDDCF73B4627928FBFE02ED52B7251777DBD9  : public Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684
 {
 public:
 
@@ -1135,7 +1135,7 @@ public:
 
 
 // UnityEngine.Renderer
-struct  Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C  : public Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684
+struct Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C  : public Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684
 {
 public:
 
@@ -1144,7 +1144,7 @@ public:
 
 
 // UnityEngine.Tilemaps.TileBase
-struct  TileBase_t151317678DF54EED207F0AD6F4C590272B9AA052  : public ScriptableObject_t4361E08CEBF052C650D3666C7CEC37EB31DE116A
+struct TileBase_t151317678DF54EED207F0AD6F4C590272B9AA052  : public ScriptableObject_t4361E08CEBF052C650D3666C7CEC37EB31DE116A
 {
 public:
 
@@ -1153,7 +1153,7 @@ public:
 
 
 // UnityEngine.Collider2D
-struct  Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722  : public Behaviour_t1A3DDDCF73B4627928FBFE02ED52B7251777DBD9
+struct Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722  : public Behaviour_t1A3DDDCF73B4627928FBFE02ED52B7251777DBD9
 {
 public:
 
@@ -1162,7 +1162,7 @@ public:
 
 
 // UnityEngine.GridLayout
-struct  GridLayout_t7BA9C388D3466CA1F18CAD50848F670F670D5D29  : public Behaviour_t1A3DDDCF73B4627928FBFE02ED52B7251777DBD9
+struct GridLayout_t7BA9C388D3466CA1F18CAD50848F670F670D5D29  : public Behaviour_t1A3DDDCF73B4627928FBFE02ED52B7251777DBD9
 {
 public:
 
@@ -1171,7 +1171,7 @@ public:
 
 
 // UnityEngine.Tilemaps.Tile
-struct  Tile_tA049C8EDFA25A7FFBFE6ED4C73B4121A7FB65C27  : public TileBase_t151317678DF54EED207F0AD6F4C590272B9AA052
+struct Tile_tA049C8EDFA25A7FFBFE6ED4C73B4121A7FB65C27  : public TileBase_t151317678DF54EED207F0AD6F4C590272B9AA052
 {
 public:
 	// UnityEngine.Sprite UnityEngine.Tilemaps.Tile::m_Sprite
@@ -1241,7 +1241,7 @@ public:
 
 
 // UnityEngine.Tilemaps.TilemapRenderer
-struct  TilemapRenderer_t8E3D220C1B3617980570642AB943280E4B1B6BC8  : public Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C
+struct TilemapRenderer_t8E3D220C1B3617980570642AB943280E4B1B6BC8  : public Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C
 {
 public:
 
@@ -1250,7 +1250,7 @@ public:
 
 
 // UnityEngine.Tilemaps.Tilemap
-struct  Tilemap_t0A1D80C1C0EDF8BDB0A2E274DC0826EF03642F31  : public GridLayout_t7BA9C388D3466CA1F18CAD50848F670F670D5D29
+struct Tilemap_t0A1D80C1C0EDF8BDB0A2E274DC0826EF03642F31  : public GridLayout_t7BA9C388D3466CA1F18CAD50848F670F670D5D29
 {
 public:
 
@@ -1259,7 +1259,7 @@ public:
 
 
 // UnityEngine.Tilemaps.TilemapCollider2D
-struct  TilemapCollider2D_t554A627D7A4BE08578291B19309B8C81C28DDF98  : public Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722
+struct TilemapCollider2D_t554A627D7A4BE08578291B19309B8C81C28DDF98  : public Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722
 {
 public:
 
