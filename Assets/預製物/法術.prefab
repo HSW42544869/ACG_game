@@ -4871,7 +4871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionCount: 2
   magicDelay: 3
-  timer: 1
+  timer: 0.5
 --- !u!114 &-6968560300989556231
 MonoBehaviour:
   m_ObjectHideFlags: 0

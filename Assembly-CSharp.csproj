@@ -66,7 +66,6 @@
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\CameraFollowSetup.cs" />
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\CameraFollow.cs" />
     <Compile Include="Assets\CodeMonkey\Assets.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\World_Sprite.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\World_Bar.cs" />
     <Compile Include="Assets\Scripts\player2.cs" />
@@ -88,6 +87,8 @@
     <Compile Include="Assets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\CodeMonkey\CMDebug.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionPeriodic.cs" />
+    <Compile Include="Assets\Scripts\playermovement.cs" />
+    <Compile Include="Assets\Scripts\fire.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\素材\Kyrise&apos;s 16x16 RPG Icon Pack - V1.3\readme.txt" />

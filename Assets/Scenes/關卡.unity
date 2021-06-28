@@ -1840,13 +1840,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1906536167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c43eb6f2c5e1314496e09d72968da9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 58b90e573bea79a4dbbcb7f5990e038e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spells: {fileID: 8360667018871773378, guid: 831000f6a7fffd44aa0f8e4ec4958e7e, type: 3}
   soundFire: {fileID: 8300000, guid: 624927579b63a5a4eb8feaa8517e3b9f, type: 3}
   live: 3
-  speed: 6
+  speed: 5
   point: {fileID: 2056057355}
   Speedspelles: 500
   inPortal: 0
@@ -2259,12 +2259,5 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 7494714394520583364, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7494714394520583364, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa, type: 3}
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e2e1d1b830e60d4dbf33b7ebc8fe6aa, type: 3}

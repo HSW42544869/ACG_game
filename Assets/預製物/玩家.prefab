@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 6798961963808553918}
   - component: {fileID: 6798961963808553919}
   - component: {fileID: 6798961963808553916}
-  - component: {fileID: 7494714394520583364}
   m_Layer: 9
   m_Name: "\u73A9\u5BB6"
   m_TagString: Player
@@ -238,26 +237,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &7494714394520583364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6798961963808553917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c43eb6f2c5e1314496e09d72968da9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spells: {fileID: 8360667018871773378, guid: 831000f6a7fffd44aa0f8e4ec4958e7e, type: 3}
-  soundFire: {fileID: 8300000, guid: 624927579b63a5a4eb8feaa8517e3b9f, type: 3}
-  live: 3
-  speed: 0
-  point: {fileID: 6798961963871590370}
-  Speedspelles: 500
-  inPortal: 0
-  inDoor: 0
 --- !u!1 &6798961963871590371
 GameObject:
   m_ObjectHideFlags: 0

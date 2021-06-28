@@ -3,8 +3,8 @@
 public class Magic : MonoBehaviour
 {
     public int collisionCount = 2;
-    public float magicDelay = 3;
-    public float timer = 3;
+    public float magicDelay = 0.5f;
+    public float timer = 0.5f;
     //private Rigidbody2D rig;
     private void Awake()
     {
