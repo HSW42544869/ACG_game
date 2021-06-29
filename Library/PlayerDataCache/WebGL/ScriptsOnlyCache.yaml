@@ -11,7 +11,7 @@ ScriptsOnlyBuild:
     - Room
     - RoomGrnerator
     - WallMap
-    - player2
+    - playermovement
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -79,23 +79,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 1522}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1756}
+      Script: {instanceID: 1802}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 2640}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 3030}
+      Script: {instanceID: 3076}
     - Class: 114
-      Script: {instanceID: 3272}
+      Script: {instanceID: 3318}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3432}
     - Class: 114
-      Script: {instanceID: 5440}
+      Script: {instanceID: 5486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -158,35 +158,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 1522}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1724}
+      Script: {instanceID: 1770}
     - Class: 114
-      Script: {instanceID: 1960}
+      Script: {instanceID: 2006}
     - Class: 114
-      Script: {instanceID: 1976}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 2392}
+      Script: {instanceID: 2440}
     - Class: 114
-      Script: {instanceID: 2640}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 2810}
+      Script: {instanceID: 2890}
     - Class: 114
-      Script: {instanceID: 2844}
+      Script: {instanceID: 3076}
     - Class: 114
-      Script: {instanceID: 3030}
+      Script: {instanceID: 3318}
     - Class: 114
-      Script: {instanceID: 3272}
+      Script: {instanceID: 3442}
     - Class: 114
-      Script: {instanceID: 3396}
+      Script: {instanceID: 3794}
     - Class: 114
-      Script: {instanceID: 3748}
+      Script: {instanceID: 3812}
     - Class: 114
-      Script: {instanceID: 3766}
+      Script: {instanceID: 3906}
     - Class: 114
-      Script: {instanceID: 3860}
+      Script: {instanceID: 5710}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -406,12 +406,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
-  - hash:
-      serializedVersion: 2
-      Hash: b7ff0b7d447daa9a6e323091dd59ce02
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Player
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -862,8 +856,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 195393d79b560101fc8c65a0eaccdc7b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: playermovement
   platform: 20
   scenePathNames:
   - "Assets/Scenes/\u9078\u55AE.unity"
   - "Assets/Scenes/\u95DC\u5361.unity"
-  playerPath: C:/ACG/ACG_game/ACG_game/Web
+  playerPath: D:/ACG/Web

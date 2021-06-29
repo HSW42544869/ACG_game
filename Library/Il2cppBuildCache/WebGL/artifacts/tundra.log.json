@@ -1,3 +1,5 @@
 {"msg":"init","dagFile":"artifacts\\tundra.dag","targets":[]}
-{"msg":"nodeOutputsMissing","annotation":"Il2Cpp C:/ACG/ACG_game/ACG_game/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"files":["C:\\ACG\\ACG_game\\ACG_game\\Library\\Il2cppBuildCache\\WebGL\\Native\\build.bc"],"directories":[]}
-{"msg":"noderesult","annotation":"Il2Cpp C:/ACG/ACG_game/ACG_game/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"exitcode":0,"stdout":"Building build.bc with EmscriptenToolChain\r\n\tOutput directory: C:\\ACG\\ACG_game\\ACG_game\\Library\\Il2cppBuildCache\\WebGL\\Native\r\n\tCache directory: C:\\ACG\\ACG_game\\ACG_game\\Library\\il2cpp_cache\r\nObjectFiles: 175 of which compiled: 0\r\nTotal compilation time: 124 milliseconds.\r\nResponse file: C:\\Users\\love0\\AppData\\Local\\Temp\\_1187427108\\response.rsp\r\nCleaned up 0 object files."}
+{"msg":"newNode","annotation":"WriteResponseFile artifacts/rsp/3338331650633094220.rsp","index":1}
+{"msg":"noderesult","annotation":"WriteResponseFile artifacts/rsp/3338331650633094220.rsp","index":1,"exitcode":0}
+{"msg":"newNode","annotation":"Il2Cpp D:/ACG/ACG_game/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2}
+{"msg":"noderesult","annotation":"Il2Cpp D:/ACG/ACG_game/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"exitcode":0}
